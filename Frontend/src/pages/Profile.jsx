@@ -35,28 +35,28 @@ const Profile = () => {
 
       {/* 🔹 Summary Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
-        <div className="bg-white p-6 rounded-xl shadow-md text-center">
-          <h3 className="text-gray-500 text-sm">Total Expenses</h3>
+        <div className="bg-gray-800 p-6 rounded-xl shadow-md text-center">
+          <h3 className="text-white text-sm">Total Expenses</h3>
           <p className="text-2xl font-semibold text-blue-600">₹{totalExpenses}</p>
         </div>
 
-        <div className="bg-white p-6 rounded-xl shadow-md text-center">
-          <h3 className="text-gray-500 text-sm">Total Transactions</h3>
+        <div className="bg-gray-800 p-6 rounded-xl shadow-md text-center">
+          <h3 className="text-white  text-sm">Total Transactions</h3>
           <p className="text-2xl font-semibold text-blue-600">{totalTransactions}</p>
         </div>
 
-        <div className="bg-white p-6 rounded-xl shadow-md text-center">
-          <h3 className="text-gray-500 text-sm">Top Category</h3>
+        <div className="bg-gray-800 p-6 rounded-xl shadow-md text-center">
+          <h3 className="text-white text-sm">Top Category</h3>
           <p className="text-2xl font-semibold text-blue-600">
             {topCategory || "N/A"}
           </p>
         </div>
       </div>
 
-      {/* 🔹 Charts Section */}
+      
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {/* Pie Chart - Category Breakdown */}
-        <div className="bg-white p-6 rounded-xl shadow-md">
+        
+        <div className="bg-gray-800  text-white p-6 rounded-xl shadow-md">
           <h2 className="text-xl font-semibold mb-4 text-center">Category Breakdown</h2>
           {categoryBreakdown?.length > 0 ? (
             <ResponsiveContainer width="100%" height={300}>
@@ -82,8 +82,8 @@ const Profile = () => {
           )}
         </div>
 
-        {/* Bar Chart - Monthly Trend */}
-        <div className="bg-white p-6 rounded-xl shadow-md">
+
+        <div className="bg-gray-800 p-6 text-white rounded-xl shadow-md">
           <h2 className="text-xl font-semibold mb-4 text-center">Monthly Expenses Trend</h2>
           {monthlyData?.length > 0 ? (
             <ResponsiveContainer width="100%" height={300}>

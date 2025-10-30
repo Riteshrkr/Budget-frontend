@@ -25,7 +25,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-600 text-white px-6 py-3 flex justify-between items-center shadow-md">
+    <nav className="bg-gradient-to-br from-gray-950 via-gray-900 to-black text-gray-100 px-6 py-3 flex justify-between items-center shadow-md">
       {/* 🔹 Left: App Name */}
       <Link to="/" className="text-xl font-semibold hover:text-gray-200">
         Budget Tracker
@@ -33,18 +33,18 @@ const Navbar = () => {
 
       {/* 🔹 Right: Links */}
       <div className="flex items-center gap-4">
-        <Link to="/" className="hover:text-gray-200">
+        <Link to="/" className="hover:text-red-300">
           Home
         </Link>
 
-        <Link to="/add-expense" className="hover:text-gray-200">
+        <Link to="/add-expense" className="hover:text-red-300">
           Add Expense
         </Link>
 
         {/* ✅ Profile Button */}
         <Link
           to="/profile"
-          className="bg-white text-blue-600 px-3 py-1 rounded-md hover:bg-gray-100 font-medium"
+          className="bg-gray text-white-600 px-3 py-1 rounded-md hover:text-red-300 font-medium drop-shadow-white"
         >
           Profile
         </Link>
