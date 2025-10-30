@@ -25,7 +25,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-br from-gray-950 via-gray-900 to-black text-gray-100 px-6 py-3 flex justify-between items-center shadow-md">
+    <nav className="bg-gray-900 text-gray-100 px-6 py-3 flex justify-between items-center shadow-md">
       {/* 🔹 Left: App Name */}
       <Link to="/" className="text-xl font-semibold hover:text-gray-200">
         Budget Tracker
